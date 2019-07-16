@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 1269840 */
+  src: url('//at.alicdn.com/t/font_1269840_u0zqp7e8t.eot');
+  src: url('//at.alicdn.com/t/font_1269840_u0zqp7e8t.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1269840_u0zqp7e8t.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1269840_u0zqp7e8t.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1269840_u0zqp7e8t.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1269840_u0zqp7e8t.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e61d";
+}
+
+body, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+*,:after,:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+#app {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+.content-wrapper,
+.wrapper {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  -webkit-transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -o-transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.container {
+  width: 100%;
+  -ms-flex: 0 0 auto;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2.2rem
+}
+
+.title {
+  font-size: 30px;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.button.download-btn {
+  background: #444ce0;
+  color: #fff;
+}
+
+.button.plain-btn {
+  border: 1px solid #bbb;
+}
+
+.switch-btn {
+  margin: 10px auto 10px;
+}
+
+.previewer {
+  width: 400px;
+  height: 600px;
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
