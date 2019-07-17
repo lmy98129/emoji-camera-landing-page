@@ -1,31 +1,45 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import EmojiSwitch from './views/EmojiSwitch.vue';
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
       path: '/',
       name: 'home',
+      meta: { title: '首页' },
       component: Home
     },
     {
       path: '/emoji-switch',
       name: 'emoji-switch',
-      component: EmojiSwitch
+      meta: { title: '表情换脸' },
+      component: () => import(/* webpackChunkName: "emoji-switch" */ './views/EmojiSwitch.vue')
     },
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
+      meta: { title: '关于' },
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+    },
+    {
+      path: '/ai-matting',
+      name: 'ai-matting',
+      meta: { title: 'AI抠图' },
+      component: () => import(/* webpackChunkName: "ai-matting" */ './views/AIMatting.vue')
     }
   ]
 })
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.title) {
+    document.title = `${to.meta.title} - EMOJI相机`
+  }
+  next()
+})
+
+export default router;

@@ -24,9 +24,11 @@
             </ul>
           </div>
           <!-- 右侧下载按钮 -->
-          <div class="nav-bar-right button download-btn">
-            APP下载
-          </div>
+          <a href="http://47.93.202.244:8081/static/app-release.apk">
+            <div class="nav-bar-right button download-btn">
+              APP下载
+            </div>
+          </a>
           <div 
             class="menu-btn iconfont icon-menu" 
             style="display: none"
