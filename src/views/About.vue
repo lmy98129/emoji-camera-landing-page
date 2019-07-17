@@ -61,5 +61,9 @@ export default {
   font-size: 23px;
   margin-bottom: 120px;
 }
+
+.content p {
+  word-break: break-all;
+}
 </style>
 
