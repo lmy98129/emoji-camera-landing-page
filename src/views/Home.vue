@@ -120,6 +120,10 @@ export default {
   height: 400px;
 }
 
+#switch-face-circle-demo-real {
+  z-index: 100;
+}
+
 #ai-matting-desktop {
   position: relative;
   left: -130px;
